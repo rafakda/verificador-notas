@@ -1,0 +1,238 @@
+
+        body{
+            background-color: rgb(28, 28, 109);
+            font-family: Arial, Helvetica, sans-serif;  
+              
+        }
+        header{
+            margin: auto;
+        }
+        h1{
+            margin: auto;
+            text-align: center;
+            color: rgb(224, 213, 200);
+            margin-bottom: 10px;
+        }
+        main{
+            background-color: rgb(224, 213, 200);
+            padding: 20px;
+            width: 40%;
+            height: 560px;
+            margin: auto;
+            border-radius: 10px;
+            box-shadow: 2px 2px 2px 4px rgba(0, 0, 0, 0.174);
+        }
+        nav{
+            border: solid 1px rgba(0, 0, 0, 0.108);
+            border-radius: 10px;
+            padding: 10px;
+            height: 95%;
+        }
+        
+        #conteiner1{
+            border: solid 1px rgba(0, 0, 0, 0.115);
+            display: flex;
+            align-items: center;
+            align-items: center;
+            flex-direction: column;
+            width: 300px;
+            border-radius: 10px;
+            padding-top: 5px;
+        }
+        #conteiner2{
+            border: solid 1px rgba(0, 0, 0, 0.115);
+            display: flex;
+            align-items: center;
+            align-items: center;
+            flex-direction: column;
+            width: 300px;
+            border-radius: 10px;
+            padding-top: 5px;
+        }
+       
+        label{
+            width: 90%;
+        }
+        #nome{
+            width: 75%;
+            border: none;
+            border-radius: 2px;
+            height: 20px;
+        }
+        #n1{
+            background-color: white;
+            border-radius: 2px;
+            border: none;
+            padding: 3px;
+            width: 90%;
+        }
+        #n2{
+            background-color: white;
+            border-radius: 2px;
+            border: none;
+            padding: 3px;
+            width: 90%;
+        }
+        #n3{
+            background-color: white;
+            border-radius: 2px;
+            border: none;
+            padding: 3px;
+            width: 90%;
+        }
+        #n4{
+            background-color: white;
+            border-radius: 2px;
+            border: none;
+            padding: 3px;
+            width: 90%;
+        }
+        #n5{
+            background-color: white;
+            border-radius: 2px;
+            border: none;
+            padding: 3px;
+            width: 90%;
+        }
+        #n6{
+            background-color: white;
+            border-radius: 2px;
+            border: none;
+            padding: 3px;
+            width: 90%;
+        }
+        #inp{
+            margin-top: 9px;
+        }
+
+        #ap{
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        input{
+            margin-bottom: 10px;
+            width: 130px;
+            
+        }
+        #co1{
+            border: solid 1px rgba(0, 0, 0, 0.079);
+            border-radius: 10px;
+            padding: 10px; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            gap: 50px;
+        }
+        #co2{
+            border: solid 1px rgba(0, 0, 0, 0.079);
+            border-radius: 10px;
+            padding: 10px;
+            height: 48%;
+        }
+        #ac{
+            margin-top: 5px;
+        }
+        
+        #acu{
+            background-color:white;
+            border-radius: 3px;
+            height: 20px;
+            padding: 5px;
+            box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.237);
+        }
+        #me{
+            margin-top: 10px;
+        }
+        #med{
+            background-color: white;
+            border-radius: 3px;
+            height: 20px;
+            padding: 5px;
+            box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.237);
+        }
+        #re{
+            margin-top: 10px;
+        }
+        #res{
+            background-color: white;
+            border-radius: 3px;
+            height: 90px;
+            padding: 5px;
+            box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.237);
+        }
+        footer{
+            margin-top: -10px;
+            color: rgb(224, 213, 200);
+            font-style: italic;
+            text-align: center;
+        }
+        @media (max-width: 900px) {
+            main{
+                width: 80%;
+                height: 100%;
+            }
+            #acu{
+                height: 35px;
+
+            }
+            #med{
+                height: 35px;
+
+            }
+            #res{
+                height: 110px;
+            }
+            
+            #co1{
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                border: solid 1px rgba(0, 0, 0, 0.079);
+                padding: 0px;
+                
+            }
+            #co2{
+                height: 100%;
+            }
+            #conteiner1{
+                width: 100%;
+            }
+            #conteiner2{
+                width: 100%;
+            }
+
+            #n1{
+                width: 70%;
+    
+            }
+            #n2{
+                width: 70%;
+            }
+            #n3{
+                width: 70%;
+            }
+            #n4{
+                width: 70%;
+            }
+            #n5{
+                width: 70%;
+            }
+            #n6{
+                width: 70%;
+            }
+            label{
+            width: 70%;
+        }
+
+        
+    
+  
+        }
+
+
+    
+
+   
+           

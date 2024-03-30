@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>VERIFICADOR DE NOTAS ANUAL</h1>
+    </header>
+    <main>
+        <nav>
+            <div id="ap">APLICAR AS NOTAS: PORTUGUÊS</div>
+
+            <label for="text">Nome do aluno:</label>
+            <input type="text" id="nom">
+
+            <article id="co1">
+                <div id="conteiner1">
+                 <label for="nome"> Primeiro Bimestre </label>
+                 <input type="number" id="n1" max="10" min="0" placeholder="nota">
+
+                 <label for="nome"> Segundo Bimestre</label>
+                 <input type="number" id="n2" max="10" min="0"  placeholder="nota">
+
+                 <label for="nome"> Terceiro Bimestre</label>
+                 <input type="number" id="n3" max="10" min="0"  placeholder="nota">
+                </div>
+                 
+                <div id="conteiner2">
+                <label for="nome"> Quarto Bimestre</label>
+                 <input type="number" id="n4" max="10" min="0"   placeholder="nota">
+
+                 <label for="nome"> Quinto Bimestre</label>
+                 <input type="number" id="n5" max="10" min="0"  placeholder="nota">
+
+                 <label for="nome"> Sexto Bimestre</label>
+                 <input type="number" id="n6" max="10" min="0" placeholder="nota">
+                </div>
+                 
+                  
+            </article>
+
+    <input id="inp" type="button" value="CLICAR" onclick="clicar()">
+
+    <div id="app">RESULTADO FINAL:</div>
+            <article id="co2">
+
+                <div id="ac">ACUMULADO :</div>
+                 <div id="acu"></div>
+
+                 <div id="me">MÉDIA :</div>
+                 <div id="med"></div>
+
+                 <div id="re">RESULTADO :</div>
+                  <div id="res"></div>  
+            </article>
+        </nav>
+    </main>
+    <footer>
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+        </p>
+    </footer>
+    <style>
+        body{
+            background-color: rgba(0, 0, 0, 0.863);
+            font-family: Arial, Helvetica, sans-serif;  
+              
+        }
+        header{
+            margin: auto;
+        }
+        h1{
+            margin: auto;
+            text-align: center;
+            color: rgb(224, 213, 200);
+            margin-bottom: 10px;
+        }
+        main{
+            background-color: rgb(224, 213, 200);
+            padding: 20px;
+            width: 40%;
+            height: 650px;
+            margin: auto;
+            border-radius: 10px;
+            box-shadow: 2px 2px 2px 4px rgba(0, 0, 0, 0.174);
+        }
+        nav{
+            border: solid 1px rgba(0, 0, 0, 0.108);
+            border-radius: 10px;
+            padding: 10px;
+            height: 95%;
+        }
+        
+        #conteiner1{
+            border: solid 1px rgba(0, 0, 0, 0.115);
+            display: flex;
+            align-items: center;
+            align-items: center;
+            flex-direction: column;
+            width: 300px;
+            border-radius: 10px;
+            padding-top: 5px;
+        }
+        #conteiner2{
+            border: solid 1px rgba(0, 0, 0, 0.115);
+            display: flex;
+            align-items: center;
+            align-items: center;
+            flex-direction: column;
+            width: 300px;
+            border-radius: 10px;
+            padding-top: 5px;
+        }
+       
+        label{
+            width: 90%;
+        }
+        #nom{
+            width: 75%;
+            background-color: white;
+            border: none;
+            border-radius: 2px;
+            height: 20px;
+        }
+        #n1{
+            background-color: white;
+            border-radius: 2px;
+            border: none;
+            padding: 3px;
+            width: 90%;
+        }
+        #n2{
+            background-color: white;
+            border-radius: 2px;
+            border: none;
+            padding: 3px;
+            width: 90%;
+        }
+        #n3{
+            background-color: white;
+            border-radius: 2px;
+            border: none;
+            padding: 3px;
+            width: 90%;
+        }
+        #n4{
+            background-color: white;
+            border-radius: 2px;
+            border: none;
+            padding: 3px;
+            width: 90%;
+        }
+        #n5{
+            background-color: white;
+            border-radius: 2px;
+            border: none;
+            padding: 3px;
+            width: 90%;
+        }
+        #n6{
+            background-color: white;
+            border-radius: 2px;
+            border: none;
+            padding: 3px;
+            width: 90%;
+        }
+        #inp{
+            margin-top: 9px;
+        }
+
+        #ap{
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        #app{
+            font-weight: bold;
+            margin: auto;
+            text-align: center;
+        }
+
+        input{
+            margin-bottom: 10px;
+            width: 130px;
+            
+        }
+        #co1{
+            border: solid 1px rgba(0, 0, 0, 0.079);
+            border-radius: 10px;
+            padding: 10px; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            gap: 50px;
+        }
+        #co2{
+            border: solid 1px rgba(0, 0, 0, 0.079);
+            border-radius: 10px;
+            padding: 10px;
+            height: 46%;
+        }
+        #ac{
+            margin-top: 5px;
+        }
+        
+        #acu{
+            background-color:white;
+            border-radius: 3px;
+            height: 20px;
+            padding: 5px;
+            box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.237);
+        }
+        #me{
+            margin-top: 10px;
+        }
+        #med{
+            background-color: white;
+            border-radius: 3px;
+            height: 20px;
+            padding: 5px;
+            box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.237);
+        }
+        #re{
+            margin-top: 10px;
+        }
+        #res{
+            background-color: white;
+            border-radius: 3px;
+            height: 130px;
+            padding: 5px;
+            box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.237);
+        }
+        footer{
+            margin-top: -10px;
+            color: rgb(224, 213, 200);
+            font-style: italic;
+            text-align: center;
+        }
+        @media (max-width: 900px) {
+            main{
+                width: 80%;
+                height: 100%;
+            }
+            #acu{
+                height: 100%;
+                padding: 10px;
+
+            }
+            #med{
+                height: 100%;
+                padding: 10px;
+
+            }
+            #res{
+            background-color: white;
+            border-radius: 3px;
+            height: 100%;
+            padding: 10px;
+            box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.237);
+        }
+            
+            #co1{
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                border: solid 1px rgba(0, 0, 0, 0.079);
+                padding: 0px;
+                
+            }
+            #co2{
+                height: 100%;
+            }
+            #conteiner1{
+                width: 100%;
+            }
+            #conteiner2{
+                width: 100%;
+            }
+
+            #n1{
+                width: 70%;
+    
+            }
+            #n2{
+                width: 70%;
+            }
+            #n3{
+                width: 70%;
+            }
+            #n4{
+                width: 70%;
+            }
+            #n5{
+                width: 70%;
+            }
+            #n6{
+                width: 70%;
+            }
+            label{
+            width: 70%;
+        }
+        #nom{
+            width: 100%;
+        }
+
+        
+    
+  
+        }
+
+    </style>
+    
+
+    <script>
+        function clicar(){
+            var n1 = document.querySelector('input#n1')
+            var n2 = document.querySelector('input#n2')
+            var n3 = document.querySelector('input#n3')
+            var n4 = document.querySelector('input#n4')
+            var n5 = document.querySelector('input#n5')
+            var n6 = document.querySelector('input#n6')
+            var non = document.querySelector('input#nom')
+            var body = document.querySelector('body')
+
+            var acu = document.querySelector('div#acu')
+            var med = document.querySelector('div#med')
+            var res = document.querySelector('div#res')
+    
+            var a = Number(n1.value)
+            var b = Number(n2.value)
+            var c = Number(n3.value)
+            var d = Number(n4.value)
+            var e = Number(n5.value)
+            var f = Number(n6.value)
+            var nome = nom.value
+
+            var x = a + b + c + d + e + f
+            var x1 = x / 6
+        
+            acu.innerHTML=`Resultado acumulado de <STRONG>${x}; Pts.<STRONG>`
+            med.innerHTML=`A média foi de <STRONG> ${x1} Pts.<STRONG>`
+
+            if(x1 <=0 ){
+                alert('PREENCHA OS DADOS !');
+                acu.innerHTML=''
+                med.innerHTML=''
+                res.innerHTML=``
+
+            }else if(x1 > 0 && x1 <= 5.5){
+                res.innerHTML=`Situação do Aluno(a) <STRONG>${nome} :<STRONG/><p> REPROVADO(A)<STRONG>`
+                res.innerHTML+=`<p>NÃO CONSEGUIU ATINGIR A NOTA MÍNIMA.<p>`
+                res.innerHTML+=`<p>BOA SORTE NA PROXÍNA TENTATIVA !<p>`
+
+            }else if(x1 > 5.5 && x1 <= 8.5){
+                res.innerHTML=`Situação do Aluno(a) <STRONG>${nome} :<STRONG> <P>APROVADO<STRONG><P>`
+                res.innerHTML+=`<p>NOTAS MUITO PROXÍMAS A MÉDIA<p>`
+                res.innerHTML+=`<p>TOME MAIS CUIDADO!<p>`
+
+            }else if(x1 > 8.5 && x1 <= 10){
+                res.innerHTML=`Situação do Aluno(a) <STRONG>${nome} :<P><STRONG> APROVADO<STRONG><P>`
+                res.innerHTML+=`<p>NOTAS MUITO ACÍMA DA MÉDIA<p>`
+                res.innerHTML+=`<p><STRONG>PARABÉNS!<STRONG><p>`
+
+            }else{
+                alert('VERIFIQUE OS DADOS');
+                acu.innerHTML=''
+                med.innerHTML=''
+                res.innerHTML=''
+
+            }
+
+        }
+
+    </script>
+
+    
+</body>
+</html>
